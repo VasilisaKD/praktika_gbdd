@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C94CB25B-8636-4210-A359-C8D04B04F156}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VIN_LIB">
+      <HintPath>..\..\VIN_LIB\VIN_LIB\bin\Debug\netstandard2.0\VIN_LIB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addtransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addtransport.Designer.cs">
+      <DependentUpon>addtransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bd.Designer.cs">
+      <DependentUpon>bd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="driver.Designer.cs">
+      <DependentUpon>driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dtp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dtp.Designer.cs">
+      <DependentUpon>dtp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editdtp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editdtp.Designer.cs">
+      <DependentUpon>editdtp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editvy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editvy.Designer.cs">
+      <DependentUpon>editvy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="historyts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="historyts.Designer.cs">
+      <DependentUpon>historyts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="photo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="photo.Designer.cs">
+      <DependentUpon>photo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print.Designer.cs">
+      <DependentUpon>print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="showvy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showvy.Designer.cs">
+      <DependentUpon>showvy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabledtp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabledtp.Designer.cs">
+      <DependentUpon>tabledtp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="гбддDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>гбддDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addtransport.resx">
+      <DependentUpon>addtransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bd.resx">
+      <DependentUpon>bd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="driver.resx">
+      <DependentUpon>driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dtp.resx">
+      <DependentUpon>dtp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editdtp.resx">
+      <DependentUpon>editdtp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editvy.resx">
+      <DependentUpon>editvy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="historyts.resx">
+      <DependentUpon>historyts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="photo.resx">
+      <DependentUpon>photo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print.resx">
+      <DependentUpon>print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="showvy.resx">
+      <DependentUpon>showvy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabledtp.resx">
+      <DependentUpon>tabledtp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="гбддDataSet.xsc">
+      <DependentUpon>гбддDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="гбддDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>гбддDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="гбддDataSet.xss">
+      <DependentUpon>гбддDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driver_license_template.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
